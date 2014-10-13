@@ -1,0 +1,28 @@
+<div class="container">
+
+<div id="logout"><%= @user.email %> <a href="/logout">Logout</a></div>
+
+<h1>Dashboard</h1>
+
+<h3>Pick a deck!</h3>
+<ul>
+<% @decks.each do |deck| %>
+  <li>
+    <a href="/decks/<%= deck.name %>"><%= deck.name %></a>
+  </li>
+<% end %>
+</ul>
+
+<h3>Statistics</h3>
+<ul>
+  <li>Played games: <%= @num_rounds %></li>
+  <li>Decks played:
+    <% @rounds.each do |round| %>
+    <ul id="stats">
+      <%= round.deck.name %> (<%= round.correct_guesses %> correct out of <%= round.total_guesses %>)
+    </ul>
+    <% end %>
+  </li>
+</ul>
+
+</div>

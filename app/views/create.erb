@@ -1,0 +1,21 @@
+<div class="container">
+
+<h1 class="login">Create an account</h1>
+
+<p class="error-message"><%= @message %></p>
+
+<form action="/create" method="POST">
+  <ul class="list">
+    <li>
+      <input type="text" placeholder="email" name="email" />
+    </li>
+    <li>
+      <input type="password" placeholder="password" name="password" />
+    </li>
+    <li>
+      <input id="button_submit" type="submit" value="Create Account" />
+    </li>
+  </ul>
+</form>
+
+</div>

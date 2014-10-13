@@ -1,0 +1,17 @@
+<div class="container">
+
+<div id="logout"><%= @user.email %> <a href="/logout">Logout</a></div>
+
+<h2 id="correct-message"><%= @correct_message %></h2>
+<h2 id="incorrect-message"><%= @incorrect_message %></h2>
+
+<h2>Question:</h2>
+<h3><%= @card.question %></h3>
+<img class="img-halfwidth" src="<%= @card.question_image_url %>" />
+
+<form action="/decks/<%= @deck.name %>/<%= @card.id %>" method="POST">
+  <input type="text" name="answer" />
+  <input type="submit" value="Submit" />
+</form>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+
+<h1 class="login">Login to FlashCards</h1>
+
+<p class="error-message"><%= @message %></p>
+
+<form action="/login" method="POST">
+  <ul class="list">
+    <li>
+      <input type="text" placeholder="email" name="email" />
+    </li>
+    <li>
+      <input type="password" placeholder="password" name="password" />
+    </li>
+    <li>
+      <input id="button_submit" type="submit" value="Log in" />
+    </li>
+  </ul>
+</form>
+
+<p id="register">Not registered yet? <a href="/create">Create an account</a></p>
+
+</div>

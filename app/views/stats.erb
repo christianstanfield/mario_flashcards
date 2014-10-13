@@ -1,0 +1,16 @@
+<div class="container">
+
+<div id="logout"><%= @user.email %> <a href="/logout">Logout</a></div>
+
+<h2 id="correct-message"><%= @correct_message %></h2>
+<h2 id="incorrect-message"><%= @incorrect_message %></h2>
+
+<h1>Game statistics</h1>
+<ul>
+  <li>Deck: <%= @deck.name %></li>
+  <li>Number correct: <%= @number_correct %></li>
+  <li>Number incorrect: <%= @number_incorrect %></li>
+</ul>
+<a href="/dashboard">Back to dashboard</a>
+
+</div>

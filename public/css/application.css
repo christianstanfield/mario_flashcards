@@ -1,0 +1,106 @@
+
+body {
+  background: url('/mario.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*th {
+  text-align: left;
+}*/
+
+.container {
+  margin: 20px auto;
+  margin-top: 200px;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  background-color: rgba(255,255,255,0.7);
+}
+
+/* LOGIN */
+
+.list {
+  list-style: none;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.list input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 30px;
+  padding-left: 5px;
+}
+
+#button_submit {
+  width: 41.5%;
+}
+
+.login {
+  text-align: center;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+#register {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* GAME */
+
+#logout {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#correct-message {
+  color: green;
+}
+
+#incorrect-message {
+  color: red;
+}
+
+.li-inline {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/*.img-fullwidth {
+  width: 100%;
+}*/
+
+.img-halfwidth {
+  height: 300px;
+  padding-left: 50px;
+}
+
+.banner {
+  position: relative;
+  overflow: auto;
+}
+.banner li {
+  list-style: none;
+}
+.banner ul li {
+  float: left;
+  padding-bottom: 20px;
+}
+
+#stats {
+  padding: 10px;
+}
